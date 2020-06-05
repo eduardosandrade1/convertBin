@@ -1,0 +1,118 @@
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "h h h h h h"
+                        "m m m m m m"
+                        "f f f f f f";
+}
+*{
+    margin: 0px;
+}
+header{
+    grid-area: h;
+    display: flex;
+    justify-content: center;
+    background-color: indigo;
+    color: ivory;
+    font-size: 25px;
+    padding-top: 5%;
+}
+.ann{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+}
+main{
+    grid-area: m;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 180px 0px;
+}
+.area-resultado{
+    display: flex;
+    background-color: green;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    color: ivory;
+    max-width: 100px;
+    font-size: 40px;
+    border-radius: 10px;
+}
+.nums{
+    display: flex;
+    justify-content: space-evenly;
+}
+.binar .one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 60px;
+    background-color:gray;
+    border-radius: 10px;
+}
+.binar .one:hover{
+    background-color: rgb(173, 173, 173) ;
+}
+.binar .zero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 60px;
+    background-color: gray;
+    border-radius: 10px;
+}
+.binar .zero:hover{
+    background-color: rgb(173, 173, 173);
+}
+.binar .linha{
+    width: 100%;
+    border: 1px solid grey;
+}
+.binar input{
+    font-size: 25px;
+    display: flex;
+    margin: auto;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.binar input:focus{
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    outline: none;
+}
+.binar .btn{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: indigo;
+    color: ivory;
+    margin:8px;
+    padding:10px;
+    border-radius: 10px;
+    font-size: 22px;
+}
+.binar .btn:hover{
+    background-color: rgb(94, 38, 134);
+}
+.logo-apaga{
+    height: 30px;
+    width: 30px;
+}
+
+footer{
+    grid-area:f;
+    margin: auto;
+    height: 80px;
+    width: auto;
+    margin-top: 3px;
+    margin-left: auto;
+}
