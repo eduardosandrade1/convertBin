@@ -21,13 +21,9 @@ function Add(){
 }
 function One(){
     inputElement.value = inputElement.value +1;
-    binarios.push(1);
-    console.log(binarios)
 }
 function Zero(){
     inputElement.value = inputElement.value + 0;
-
-
 }
 function deleteBin(){
     var inputText = inputElement.value;
